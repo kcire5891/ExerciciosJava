@@ -39,27 +39,31 @@ public class MenoresMultiplicaveis {
 			int kct = 0;
 			System.out.println("inicio:" + i);
 			System.out.println("nums[i]: " + nums[i]);
-			System.out.println("nums[i+1]: " + nums[i + 1]);
-			kct = nums[i] * nums[i + 1];
-			System.out.println("nums[i] * nums[i + 1]: " + kct);
+
 			// int depois = i++;
-			if ((nums[i] * nums[i + 1]) == x) {
-				mtp = new int[] { i, i };
-			}
-			if (((nums[i] * nums[i + 1]) == x) && (i + 1 <= (nums.length))) {
-				// if (menorSomaPossivel == 0) {
-				// menorSomaPossivel = nums[i] + nums[i++];
-				// mtp = new int[] {i, i};
+			for (int j = 0; j < nums.length; j++) {
+				System.out.println("nums[i+1]: " + nums[j]);
+				System.out.println("nums[i] * nums[i + 1]: " + (nums[i] * nums[j]));
+				// if ((nums[i] * nums[i + 1]) == x) {
+				// mtp = new int[] { i, i };
 				// }
-				// if ((nums[i] + nums[i++]) < menorSomaPossivel) {
-				// menorSomaPossivel = nums[i] + nums[i++];
-				System.out.println("valor bateu primeiro: " + i);
-				System.out.println("valor bateu segundo: " + (i + 1));
-				mtp = new int[] { i, i + 1 };
-				// }
+				if (((nums[i] * nums[j]) == x)) {
+					// if (menorSomaPossivel == 0) {
+					// menorSomaPossivel = nums[i] + nums[i++];
+					// mtp = new int[] {i, i};
+					// }
+					// if ((nums[i] + nums[i++]) < menorSomaPossivel) {
+					// menorSomaPossivel = nums[i] + nums[i++];
+					System.out.println("valor bateu primeiro: " + i);
+					System.out.println("valor bateu segundo: " + (j));
+					// mtp = [ i, j ];
+					// }
+				}
 			}
 
 		}
+
+		System.out.println(Arrays.toString(mtp));
 
 		int[] solucao = mtp;
 
