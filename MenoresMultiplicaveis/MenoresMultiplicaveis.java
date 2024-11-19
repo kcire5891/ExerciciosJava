@@ -1,3 +1,5 @@
+package MenoresMultiplicaveis;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -44,7 +46,7 @@ public class MenoresMultiplicaveis {
 		for (int i = 0; i < numeros.size(); i++) {
 //            List<DadosEpisodio> episodiosTemporada = temporadas.get(i).episodios();
 //            System.out.println(numeros.get(i));
-			for (int j = 1; j < numeros.size(); j++) {
+			for (int j = 0; j < numeros.size(); j++) {
 //                System.out.println(episodiosTemporada.get(j).titulo());
 
 //                System.out.println(numeros.get(i) * numeros.get(j));
@@ -74,7 +76,7 @@ public class MenoresMultiplicaveis {
 //        }
 
 
-		System.out.println(menorPossivel.get(0)[2]);
+//		System.out.println(menorPossivel.get(0)[2]);
 		int k = 0;
 		int l = 0;
 
