@@ -60,7 +60,7 @@ public class VaiVemString {
 //            partes.set(i, parteStr);
 //            partes.add(parteStr);
             System.out.println("p: "+partes.get(k));
-            if ((k + 1) % 2 == 0){
+            if ((k + 1) % 2 == 0 && k != x){
 
                 String invertida = new StringBuilder(partes.get(k)).reverse().toString();;
                 partes.set(k, invertida);
@@ -68,6 +68,18 @@ public class VaiVemString {
 
             if (k != x) {
                 finalStr.append(partes.get(k));
+            } else {
+                System.out.println(partes.get(k));
+                for (int o = 0; o < partes.get(k).length(); o++) {
+                    System.out.println(partes.get(k).charAt(o));
+                    if ((o + 1) % 2 != 0){
+
+                       finalStr.insert(0, partes.get(k).charAt(o));
+
+                    } else {
+                        finalStr.append(partes.get(k).charAt(o));
+                    }
+                }
             }
 
 
