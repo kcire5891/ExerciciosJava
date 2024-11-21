@@ -66,6 +66,12 @@ public class VaiVemString {
                 partes.set(k, invertida);
             }
 
+            if (k != x) {
+                finalStr.append(partes.get(k));
+            }
+
+
+
         }
 
 //        String[] partesComIndices = new String[partes.size()]; for (int i = 1; i < partes.size(); i++) { partesComIndices[i] = "Índice " + i + ": " + partes.get(i); }
@@ -107,10 +113,10 @@ public class VaiVemString {
 
 
 
-        for (String parte : partes) {
-            finalStr.append(parte);
-            System.out.println(parte);
-        }
+//        for (String parte : partes) {
+//            finalStr.append(parte);
+//            System.out.println(parte);
+//        }
 
         System.out.println(finalStr);
 
