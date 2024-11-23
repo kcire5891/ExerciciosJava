@@ -1,0 +1,1 @@
+Dado dois inteiros positivos "num1" e "num2", encontre o menor inteiro positivo qye seja múltiplo de ambos simulaneamente.
